@@ -1,0 +1,12 @@
+n=int(input("Enter number:"))
+if n<=1:
+    print("not composite")
+c=0
+for i in range(1,n+1):
+    if n%i==0:
+        print(i,end=" ")
+        c+=1
+if c>2:
+    print("composite num")
+else:
+    print("not composite num")
