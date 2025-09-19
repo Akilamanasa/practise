@@ -1,0 +1,11 @@
+n=int(input("Enter number:"))
+sqr=n*n
+sum=0
+while sqr>0:
+    d=sqr%10
+    sum=sum+d
+    sqr=sqr//10
+if n==sum:
+    print("Neon number")
+else:
+    print("Not neon number")

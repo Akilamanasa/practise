@@ -1,0 +1,60 @@
+#adding and sorting the list
+# l1=[5,4,7]
+# l2=[10,39,40]
+# l=l1+l2
+# print("l=",l)
+# l.sort()
+# print(l)
+
+#swaping first and last element
+# l=[1,2,3,4,5]
+# l[0],l[4]=l[4],l[0]
+# print(l)
+
+# #removing duplicate elements in a list
+# l=list(map(int,input("Enter list elements:").split()))
+# l1[]
+# for i in l1:
+#     l1.append(i)
+# print(l1)
+
+
+#ele which occurred odd number of times
+# l=list(map(int,input("Enter list elements:").split()))
+# l1=[]
+# for i in l:
+#     if l.count(i)%2!=0 and i not in l1:
+#         l1.append(i)
+# print(l1)
+
+
+#sum of 3minimum elements
+# l=[1,2,33,45,6,4]
+# l.sort()
+# print(sum(l[:3]))
+
+
+#sort the even no's in descending to ascending and then odd no's in ascending to descending
+# l=list(map(int,input("Enter list elements:").split()))
+# even=[]
+# odd=[]
+# for i in l:
+#     if i%2==0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+# even.sort(reverse=True)
+# odd.sort()
+# result=even+odd
+# print(result)
+
+#another way
+l=[1,2,4,3,5,6,9,8,7]
+l.sort()
+l1=[]
+for i in l:
+    if i%2==0:
+        l1.insert(0,i)
+    else:
+        l1.append(i)
+print(l1)

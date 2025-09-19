@@ -1,0 +1,54 @@
+#niven number
+
+# n=int(input("Enter number:"))
+# sum=0
+# while n!=0:
+#     d=n%10
+#     sum=sum+d
+#     n=n//10
+# if n%sum==0:
+#     print("niven num")
+# else:
+#     print("not niven num")
+
+#perfect number
+# n=int(input("Enter number:"))
+# sum=0
+# for i in range(1,n):
+#     if n%i==0:
+#         sum=sum+i
+# if n==sum:
+#     print("perfect num")
+# else:
+#     print("not perfect num")
+
+#strong number
+# n=int(input("Enter number:"))
+# org_num=n
+# fact=1
+# sum=0
+# while n>0:
+#     d=n%10
+#     for i in range(1,d+1):
+#         fact*=i
+#     sum+=fact
+#     n=n//10
+#     fact=1
+# if org_num==sum:
+#     print("Strong num")
+# else:
+#     print("Not strong num")
+
+#spy number
+n=int(input("Enter number:"))
+sum=0
+mul=1
+while n!=0:
+    d=n%10
+    sum+=d
+    mul*=d
+    n//=10
+if sum==n:
+    print("spy number")
+else:
+    print("not spy")

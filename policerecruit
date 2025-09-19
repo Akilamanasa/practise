@@ -1,0 +1,15 @@
+n=int(input())
+def untreated_crimes(events):
+    free_officers = 0
+    untreated = 0
+
+    for event in events:
+        if event > 0:
+            free_officers += event  # Hiring new officers
+        else:
+            if free_officers > 0:
+                free_officers -= 1  # Assign officer to crime
+            else:
+                untreated += 1  # No officer available
+
+    return untreated
