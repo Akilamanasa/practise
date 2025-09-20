@@ -1,0 +1,13 @@
+#Age
+age=int(input("Enter age:"))
+if age>=18:
+    if age>75: 
+        print("Risk for your life")
+    elif age>40:
+        print("panic attack")
+    elif age>25:
+        print("dont make noise")
+    else:
+        print("dont scream")
+else:
+    print("Not allowed")
