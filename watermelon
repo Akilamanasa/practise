@@ -1,0 +1,10 @@
+#watermelon
+n=int(input("Enter the number:"))
+if n>2 and n%2==0:
+    x=n//2
+    if x%2==0:
+        print(x,x)
+    else:
+        print(x-1,x+1)
+else:
+    print("NO") 
