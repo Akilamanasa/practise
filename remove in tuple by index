@@ -1,0 +1,6 @@
+#remove a num in tuple by index
+t=tuple(map(int,input().split()))
+i=int(input())
+t=t[:i] + t[i+1:]
+print(t)
+    
