@@ -1,0 +1,13 @@
+#captalize the first letter of a string(using title)
+# s=input()
+# result = s.title()
+# print(result)
+
+##(without title)
+s = input()   
+words = s.split()
+res = ""
+for word in words:
+    cap = word[0].upper() + word[1:]
+    res += cap + " "   
+print(res.strip())     
