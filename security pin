@@ -1,0 +1,8 @@
+pin = input("Enter security pin: ")
+
+digit_count = {}
+for d in pin:
+    digit_count[d] = digit_count.get(d, 0) + 1
+
+count_repeats = len([d for d, c in digit_count.items() if c > 1])
+print(count_repeats)
