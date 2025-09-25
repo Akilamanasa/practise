@@ -1,0 +1,12 @@
+pin = input("Enter security pin: ")
+i = int(input("Enter repeat count to check: "))
+
+digit_count = {}
+for d in pin:
+    digit_count[d] = digit_count.get(d, 0) + 1
+exact_repeats = [d for d, c in digit_count.items() if c == i]
+
+if exact_repeats:
+    print("Digits repeated", i, "times:", " ".join(exact_repeats))
+else:
+    print("No digit repeated", i, "times")
