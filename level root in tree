@@ -1,0 +1,25 @@
+
+class Node:
+    def __init__(self,root):
+        self.data=root
+        self.right=None
+        self.left=None
+def order_level(root):
+    q=[]
+    q.append(root)
+    while len(q)!=0:
+        root=q.pop(0)
+        print(root.data,end=" ")
+        if root.left is not  None:
+            q.append(root.left)
+        if root.right is not None:
+            q.append(root.right)        
+root = Node(10)
+root.left = Node(5)
+root.right = Node(20)
+root.left.left = Node(2)
+root.left.right = Node(8)
+root.right.left = Node(4)
+root.right.right = Node(3)
+print("Level order:")
+order_level(root)
