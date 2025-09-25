@@ -1,0 +1,8 @@
+def sum_of_adjacent_diff(arr):
+    total = 0
+    for i in range(len(arr) - 1):
+        total += abs(arr[i+1] - arr[i])
+    return total
+
+arr = list(map(int, input("Enter numbers separated by space: ").split()))
+print(sum_of_adjacent_diff(arr))
