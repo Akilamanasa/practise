@@ -1,0 +1,9 @@
+arr=list(map(int,input("Enter:").split()))
+import math
+def perfect_square(arr):
+        total=0
+        for num in arr:
+                if num >= 0 and math.isqrt(num)**2 == num:  
+                        total += 1
+        return total
+print("No of perfect squares:", perfect_square(arr))
